@@ -1,0 +1,6 @@
+unidecode
+string
+json
+requests
+argparse
+bs4
