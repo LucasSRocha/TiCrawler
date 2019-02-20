@@ -1,6 +1,6 @@
-bs4 
-json 
-string 
-requests 
-argparse
-unidecode 
+beautifulsoup4==4.7.1
+json==2.0.9
+requests==2.21.0 
+argparse==1.1
+Unidecode==1.0.23
+lxml==4.3.1
