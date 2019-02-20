@@ -8,7 +8,9 @@ pip3 install -r requiremets.txt
 
 # Utilização  
 Para utilizar o script utiliza-se apenas o  arquivo 'TiCrawler.py'.  
-O script pode ser utilizado a partir do nome direto da banda, utilizando o argumento -a, ou como o diretório de um arquivo .txt com o nome da banda(s) que deseja pesquisar, utilizando o argumento -p. É necessário definir um argumento para pesquisa de titulos no topo do artista, argumento -n número de titulos, ou de músicas do artista, argumento -as.
+O script pode ser utilizado a partir do nome direto da banda, utilizando o argumento -a, ou como o diretório de um arquivo .txt com o nome da banda(s) que deseja pesquisar, utilizando o argumento -p. É necessário definir um argumento para pesquisa de titulos no topo do artista, argumento -n número de titulos, ou de músicas do artista, argumento -as.  
+Caso o nome do artista não seja encontrado no site será feita uma sugestão, cabendo ao usuário aceitar ou não.
+
 <pre>
 python TikalCrawler.py [-a/--as_argument 'ARTIST']<br/>
                        [-p/-band_file_path 'FILE_PATH']<br/>
@@ -31,8 +33,26 @@ Searching for Metallica...
 Would you like to save this list as a .txt file? (y/n)
 n
 </pre>
+2. Retorno das 3 primeiras músicas no Top da banda 'Iron Maden'
+<pre>
+python TiCrawler.py -a "Iron Maden" -n 3
 
-2. Retorno das 5 primeiras músicas no Top das bandas contidas no arquivo teste.txt
+Sorry, couldn't find Iron Maden
+
+
+Do you want to search for iron maiden instead and try again? (y/n)
+y
+
+Searching for iron maiden...
+
+1) Fear Of The Dark
+2) Wasting Love
+3) The Number Of The Beast
+
+Would you like to save this list as a .txt file? (y/n)
+n
+</pre>  
+3. Retorno das 5 primeiras músicas no Top das bandas contidas no arquivo teste.txt
 <pre>
 teste.txt
   Iron Maiden
