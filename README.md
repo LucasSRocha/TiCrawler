@@ -19,6 +19,7 @@ python TikalCrawler.py [-a/--as_argument 'ARTIST']<br/>
 
 1. Retorno das 5 primeiras músicas no Top da banda Metallica
 <pre>
+python TiCrawler.py -a "Metallica" -n 5
 Searching for Metallica...
 
 1) Nothing Else Matters
