@@ -1,4 +1,4 @@
 beautifulsoup4==4.7.1
-Unidecode==1.0.23
+Unidecode==1.2.0
 lxml==4.3.1
 requests==2.21.0
